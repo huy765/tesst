@@ -8,6 +8,7 @@ const RouterCard = require("./router/card");
 const RouterCategory = require("./router/category");
 const RouterUnit = require("./router/unit");
 const RouterOrigin = require("./router/origin");
+const RouterImageProduct = require("./router/ImageProduct");
 const RouterNewsCategory = require("./router/newsCategory");
 const RouterUpload = require("../Middleware/upload");
 
@@ -20,6 +21,7 @@ app.use("/api/auth", RouterAuth);
 app.use("/api/category", RouterCategory);
 app.use("/api/unit", RouterUnit);
 app.use("/api/origin", RouterOrigin);
+app.use("/api/ImageProduct", RouterImageProduct);
 app.use("/api/upload", RouterUpload);
 app.use("/api/newsCategory", RouterNewsCategory);
 app.use("/api/card", RouterCard);
